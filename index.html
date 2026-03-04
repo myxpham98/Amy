@@ -61,10 +61,10 @@
     function checkPw(){
       const v = document.getElementById('pw-input').value;
       // SHA-256 hash of password stored — change HASH below to your own
-      // Current password: Amy2026! → hash below
+      // Current password: 9895 → hash below
       const HASH = 'b3b3c12d2fd57e57a05c7ba75c8e34fd2c1e49a8e9f5cb3e2a05e8e7d1f8c9a2';
       // Simple check: we'll use a direct comparison for simplicity
-      // Password is: 9895!
+      // Password is: 9895
       if(v === atob('OTg5NQ===')) {
         sessionStorage.setItem('moneyos_auth','1');
         document.getElementById('gate').style.display='none';
